@@ -2,134 +2,234 @@
   "trivia-data": [
     {
       "question": "What was Tandem previous name?",
-      "answers": ["Tandem", "Burger Shack", "Extraordinary Humans", "Devmynd"],
-      "correct": "Devmynd",
+      "options": [
+        {"answer": "Tandem", "correct": false},
+        {"answer": "Devmynd", "correct": true},
+        {"answer": "Burger Shack", "correct": false},
+        {"answer": "Extraordinary Humans", "correct": false}
+      ],
+      "correct_answer_answer": "Devmynd",
       "id": 1
     },
     {
       "question": "In Shakespeare's play Julius Caesar, Caesar's last words were...",
-      "answers": ["Iacta alea est!", "Vidi, vini, vici", "Aegri somnia vana", "Et tu, Brute?"],
-      "correct": "Et tu, Brute?",
+      "options": [
+        {"answer": "Et tu, Brute?", "correct": true},
+        {"answer": "Iacta alea est!", "correct": false},
+        {"answer": "Vidi, vini, vici", "correct": false},
+        {"answer": "Aegri somnia vana", "correct": false}
+      ],
+      "correct_answer": "Et tu, Brute?",
       "id": 2
     },
     {
       "question": "A group of tigers are referred to as:",
-      "answers": ["Chowder", "Pride", "Destruction", "Ambush"],
-      "correct": "Ambush",
+      "options": [
+        {"answer": "Chowder", "correct": false},
+        {"answer": "Pride", "correct": false},
+        {"answer": "Destruction", "correct": false},
+        {"answer": "Ambush", "correct": true}
+      ],
+      "correct_answer": "Ambush",
       "id": 3
     },
     {
       "question": "What is the top speed an average cat can travel?",
-      "answers": ["42 mph", "13 mph", "9 mph", "31 mph"],
-      "correct": "31 mph",
+      "options": [
+        {"answer": "42 mph", "correct": false},
+        {"answer": "13 mph", "correct": false},
+        {"answer": "31 mph", "correct": true},
+        {"answer": "9 mph", "correct": false}
+      ],
+      "correct_answer": "31 mph",
       "id": 4
     },
     {
       "question": "A cat can jump to _____ times its own height:",
-      "answers": ["3", "9", "7", "5"],
-      "correct": "5",
+      "options": [
+        {"answer": "5", "correct": true},
+        {"answer": "3", "correct": false},
+        {"answer": "9", "correct": false},
+        {"answer": "7", "correct": false}
+      ],
+      "correct_answer": "5",
       "id": 5
     },
     {
       "question": "What is the only letter that doesn't appear in a US state name?",
-      "answers": ["M", "Z", "X", "Q"],
-      "correct": "Q",
+      "options": [
+        {"answer": "Q", "correct": true},
+        {"answer": "M", "correct": false},
+        {"answer": "Z", "correct": false},
+        {"answer": "X", "correct": false}
+      ],
+      "correct_answer": "Q",
       "id": 6
     },
     {
       "question": "What is the name for a cow-bison hybrid?",
-      "answers": ["Cowson", "Bicow", "Mooson", "Beefalo"],
-      "answers": "Beefalo",
+      "options": [
+        {"answer": "Cowson", "correct": false},
+        {"answer": "Bicow", "correct": false},
+        {"answer": "Beefalo", "correct": true},
+        {"answer": "Mooson", "correct": false}
+      ],
+      "correct_answer": "Beefalo",
       "id": 7
     },
     {
       "question": "What is the largest freshwater lake in the world?",
-      "answers": ["Lake Baikal", "Lake Michigan", "Lake Victoria", "Lake Superior"],
-      "correct": "Lake Superior",
+      "options": [
+        {"answer": "Lake Superior", "correct": true},
+        {"answer": "Lake Baikal", "correct": false},
+        {"answer": "Lake Michigan", "correct": false},
+        {"answer": "Lake Victoria", "correct": false}
+      ],
+      "correct_answer": "Lake Superior",
       "id": 8
     },
 
     {
       "question": "In a website address bar, what does WWW stand for?",
-      "answers": ["Wild Wild West", "War World Web", "World Wide Web"],
-      "correct": "World Wide Web",
+      "options": [
+        {"answer": "Wild Wild West", "correct": false},
+        {"answer": "War World Web", "correct": false},
+        {"answer": "World Wide Web", "correct": true},
+        {"answer": "West World Wild", "correct": false}
+      ],
+      "correct_answer": "World Wide Web",
       "id": 9
     },
     {
       "question": "In a game of bingo, what number is represented by the name two little ducks?",
-      "answers": ["20", "55", "77", "22"],
-      "correct": "22",
+      "options": [
+        {"answer": "20", "correct": false},
+        {"answer": "55", "correct": false},
+        {"answer": "22", "correct": true},
+        {"answer": "77", "correct": false}
+      ],
+      "correct_answer": "22",
       "id": 10
     },
     {
       "question": "According to Greek mythology, who was the first woman on Earth?",
-      "answers": ["Lilith", "Eve", "Hera", "Pandora"],
-      "correct": "Pandora",
+      "options": [
+        {"answer": "Lilith", "correct": false},
+        {"answer": "Pandora", "correct": true},
+        {"answer": "Eve", "correct": false},
+        {"answer": "Hera", "correct": false}
+      ],
+      "correct_answer": "Pandora",
       "id": 11
     },
     {
       "question": "In which European city would you find Orly airport?",
-      "answers": ["London", "Belgium", "Munich", "Paris"],
-      "correct": "Paris",
+      "options": [
+        {"answer": "Paris", "correct": true},
+        {"answer": "London", "correct": false},
+        {"answer": "Belgium", "correct": false},
+        {"answer": "Munich", "correct": false}
+      ],
+      "correct_answer": "Paris",
       "id": 12
     },
     {
       "question": "Where would you find the Sea of Tranquility?",
-      "answers": ["California", "Siberia", "China", "The Moon"],
-      "correct": "The Moon",
+      "options": [
+        {"answer": "California", "correct": false},
+        {"answer": "Siberia", "correct": false},
+        {"answer": "China", "correct": false},
+        {"answer": "The Moon", "correct": true}
+      ],
+      "correct_answer": "The Moon",
       "id": 13
     },
     {
       "question": "Which artist painted 'Girl with a Pearl Earrin'?",
-      "answers": ["Van Gogh", "Picasso", "Da Vinci", "Vermeer"],
-      "correct": "Vermeer",
+      "options": [
+        {"answer": "Van Gogh", "correct": false},
+        {"answer": "Picasso", "correct": false},
+        {"answer": "Vermeer", "correct": true},
+        {"answer": "Da Vinci", "correct": false}
+      ],
+      "correct_answer": "Vermeer",
       "id": 14
     },
     {
       "question": "What is the official name for the 'hashtag' symbol?",
-      "answers": ["Number sign", "Hash Sign", "Pound", "Octothorpe"],
-      "correct": "Octothorpe",
+      "options": [
+        {"answer": "Number sign", "correct": false},
+        {"answer": "Hash Sign", "correct": false},
+        {"answer": "Octothorpe", "correct": true},
+        {"answer": "Pound", "correct": false}
+      ],
+      "correct_answer": "Octothorpe",
       "id": 15
     },
     {
       "question": "Not American at all, where is apple pie from?",
-      "answers": ["Japan", "Ethiopia", "Canada", "England"],
-      "correct": "England",
+      "options": [
+        {"answer": "Japan", "correct": false},
+        {"answer": "England", "correct": true},
+        {"answer": "Ethiopia", "correct": false},
+        {"answer": "Canada", "correct": false}
+      ],
+      "correct_answer": "England",
       "id": 16
     },
     {
       "question": "What is the national animal of Scotland?",
-      "answers": ["Bear", "Rabbit", "Seal", "Unicorn"],
-      "correct": "Unicorn",
+      "options": [
+        {"answer": "Unicorn", "correct": true},
+        {"answer": "Bear", "correct": false},
+        {"answer": "Rabbit", "correct": false},
+        {"answer": "Seal", "correct": false}
+      ],
+      "correct_answer": "Unicorn",
       "id": 17
     },
     {
       "question": "Where in the world is the only place where Canada is *due south*",
-      "answers": ["Alaska", "Russia", "Washington", "Detroit"],
-      "correct": "Detroit",
+      "options": [
+        {"answer": "Alaska", "correct": false},
+        {"answer": "Detroit", "correct": true},
+        {"answer": "Russia", "correct": false},
+        {"answer": "Washington", "correct": false}
+      ],
+      "correct_answer": "Detroit",
       "id": 18
     },
     {
       "question": "Approximately how many grapes go into a bottle of wine?",
-      "answers": ["500", "200", "1000", "700"],
-      "correct": "700",
+      "options": [
+        {"answer": "500", "correct": false},
+        {"answer": "200", "correct": false},
+        {"answer": "700", "correct": true},
+        {"answer": "1000", "correct": false}
+      ],
+      "correct_answer": "700",
       "id": 19
     },
     {
       "question": "How much does a US One Dollar Bill cost to make?",
-      "answers": ["$0.25", "$1", "$5", "$0.05"],
-      "correct": "$0.05",
+      "options": [
+        {"answer": "$0.25", "correct": false},
+        {"answer": "$1", "correct": false},
+        {"answer": "$5", "correct": false},
+        {"answer": "$0.05", "correct": true}
+      ],
+      "correct_answer": "$0.05",
       "id": 20
     },
     {
       "question": "The Vatican bank has the only ATM in the world that allows users to do what?",
-      "answers": [
-        "Receive withdrawls in rosary beads",
-        "Vote for the Pope",
-        "Purchase indulgences",
-        "Perform transactions in Latin"
+      "options": [
+        {"answer": "Perform transactions in Latin", "correct": true},
+        {"answer": "Receive withdrawls in rosary beads", "correct": false},
+        {"answer": "Vote for the Pope", "correct": false},
+        {"answer": "Purchase indulgences", "correct": false}
       ],
-      "correct": "Perform transactions in Latin",
+      "correct_answer": "Perform transactions in Latin",
       "id": 21
     }
   ]
