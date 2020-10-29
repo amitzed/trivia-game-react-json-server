@@ -26,56 +26,107 @@ const App = () => {
   }, [])
 
   const [score, setScore] = useState(0);
+  const [viewScore, setViewScore] = useState(false);
   const [focusQuestion, setFocusQuestion] = useState(0);
 
   const userAnswerSelect = (correct) => {
     if(correct) {
-      setScore(score + 1)
+      setScore(score + 1);
     }
+
+    const next = focusQuestion + 1;
+    if(next < details.length) {
+      setFocusQuestion(next)
+    } else {
+      setViewScore(true)
+    }
+  }
+
+  const refreshPage = () => {
+    window.location.reload(false);
   }
 
   return (
 
-    <div>
+    <div className="game-container">
 
-      <h2 className="ui icon header">
-        <i className="circular magic icon"></i>
-        <div className="content">
-          Quizzard of Oz
-          <div className="sub header">Enter some extra text here</div>
-        </div>
-      </h2>
+      {
+        viewScore
+        ?
+        (
 
-      <div>
-        Questions {score} out of {details.length}
-      </div>
-
-      {details.map(detail => (
-        <div key={detail.id}>
-          <div>
-            <h4>Question #</h4>
-          </div>
-
-          <div>
-            <h4>{detail.question}</h4>
-          </div>
-
-          {detail.options.map((option, index) => (
-            <div key={index}>
-              <button>{option.answer}</button>
-                <span>
-                  {option.correct
-                  ?
-                  <span>True</span>
-                  :
-                  <span>False</span>
-                  }
-                </span>
+          <div className="ui placeholder segment">
+            <div className="ui two column stackable center aligned grid">
+              <div className="ui vertical divider">
+                <i className="arrow circle right icon"></i>
+              </div>
+              <div className="middle aligned row">
+                <div className="column">
+                  <div className="ui icon header">
+                    <i className="check circle outline icon"></i>
+                    Your Score: {score} out of {details.length} Questions.
+                  </div>
+                </div>
+                <div className="column">
+                  <div className="ui icon header">
+                    <i className="clipboard list icon"></i>
+                    Percentage: {score / details.length + '00'}%
+                  </div>
+                  <button onClick={refreshPage} className="ui primary button">
+                    Play Again
+                  </button>
+                </div>
+              </div>
             </div>
-          ))}
+          </div>
 
-        </div>
-      ))}
+
+        )
+        :
+        (
+          <div>
+            <h2 className="ui icon header">
+              <i className="circular magic icon"></i>
+              <div className="content">
+                Quizzard of Oz
+                <div className="sub header">Enter some extra text here</div>
+              </div>
+            </h2>
+
+            <div>
+              Question #{focusQuestion} out of {details.length}
+            </div>
+
+            {details.map(detail => (
+              <div key={detail.id}>
+                <div>
+                  <h4>Question #</h4>
+                </div>
+
+                <div>
+                  <h4>{detail.question}</h4>
+                </div>
+
+                {detail.options.map((option, index) => (
+                  <div key={index}>
+                    <button onClick={() => userAnswerSelect(option.correct)}>{option.answer}</button>
+                      <span>
+                        {option.correct
+                        ?
+                        <span>True</span>
+                        :
+                        <span>False</span>
+                        }
+                      </span>
+                  </div>
+                ))}
+
+              </div>
+            ))}
+          </div>
+        )
+      }
+
 
     </div>
   )
