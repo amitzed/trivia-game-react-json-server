@@ -1,37 +1,72 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import trivia_data from '../apis/trivia_data';
 
-class App extends Component {
-  state = {
-    dataBank: []
-  }
+//     // Below picks 10 random questions out of 21
+//     // console.log(this.state.dataBank.sort(() => 0.5 - Math.random()).slice(0, 10));
 
-  componentDidMount() {
-    trivia_data.get('/trivia-data')
-    .then((res) => {
-      const dataBank = res.data;
+const App = () => {
+  const [details, setDetails] = useState([]);
 
-      this.setState({
-        dataBank
-      })
-      // console.log(this.state.dataBank);
-      // Below picks 10 random questions out of 21
-      console.log(this.state.dataBank.sort(() => 0.5 - Math.random()).slice(0, 10));
+  // state = {
+  //   dataBank: []
+  // }
 
-    })
-    .catch((err) => {
-      console.error('Something Went Wrong');
-      console.error(err);
-    })
-  }
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await trivia_data.get('/trivia-data')
 
-  render() {
-    const { dataBank } = this.state;
+      setDetails(response.data);
+    }
+
+    fetchData();
+  }, [])
+
+  // componentDidMount() {
+  //   trivia_data.get('/trivia-data')
+  //   .then((res) => {
+  //     const dataBank = res.data;
+  //
+  //     this.setState({
+  //       dataBank
+  //     })
+  //     // console.log(this.state.dataBank);
+  //     // Below picks 10 random questions out of 21
+  //     // console.log(this.state.dataBank.sort(() => 0.5 - Math.random()).slice(0, 10));
+  //
+  //   })
+  //   .catch((err) => {
+  //     console.error('Something Went Wrong');
+  //     console.error(err);
+  //   })
+  // }
+
+  // render() {
+    // const { dataBank } = this.state;
 
     return (
       <div>
-        {dataBank.map((bank) => (
+
+        {details.map(detail => (
+          <div key={detail.id}>
+            <div>
+              <h4>Question #</h4>
+            </div>
+
+            <div>
+              <h4>{detail.question}</h4>
+            </div>
+
+            <div>
+              <button>{detail.answers[0]}</button>
+              <button>{detail.answers[1]}</button>
+              <button>{detail.answers[2]}</button>
+              <button>{detail.answers[3]}</button>
+            </div>
+          </div>
+        ))}
+
+        {/* {dataBank.map((bank) => (
           <div key={bank.id}>
 
             <div>
@@ -50,10 +85,10 @@ class App extends Component {
             </div>
 
           </div>
-        ))}
+        ))} */}
       </div>
     )
-  }
+  // }
 }
 
 export default App;
