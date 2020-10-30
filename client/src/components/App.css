@@ -1,0 +1,88 @@
+.game-container {
+  background-color: #113c00;
+  width: 50rem;
+  min-height: 200px;
+  border-radius: 15%;
+  padding: 10rem;
+  box-shadow: 7px 7px 80px 25px rgba(230, 153, 12, 0.75);
+  border: 5px solid rgb(230, 153, 12);
+  display: flex;
+  justify-content: center;
+}
+
+.icon-spin {
+  animation: spin-logo infinite 60s linear;
+}
+
+/* Question */
+.question-element-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.question-number {
+  margin-bottom: 20px;
+}
+
+.question-number span {
+  font-size: 15px;
+}
+
+.question-data {
+  margin-bottom: 12px;
+}
+
+/* Multiple Choice Options */
+.multiple-choice-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Buttons */
+.answer-options-btn {
+  width: 100%;
+  background-color: #86c5d2;
+  color: #113c00;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.answer-options-btn:hover {
+  background-color: #bf86a6;
+  color: #000;
+  transform: scale(1.03);
+}
+
+.answer-options-btn:focus {
+  outline: none;
+}
+
+/* Score Page */
+.score-page-wrapper {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+.score-page-wrapper .icon {
+  color: #113c00;
+}
+
+/* Animations */
+@keyframes spin-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
