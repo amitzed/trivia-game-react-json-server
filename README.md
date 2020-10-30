@@ -12,15 +12,21 @@
 
   (3) In your Terminal, navigate to this new folder and type: git clone *PASTE CLONED LINK HERE* and press *ENTER*
 
-  (2) From root (at same level as <em><b>api</b></em> and <em><b>client</b></em> folders):
+  (4) CD into **trivia-game-react-json-server folder**
 
-  (3) yarn --cwd api install
+  (5) yarn --cwd api install           
 
-  (4) yarn --cwd client install
+  (6) yarn --cwd client install
 
-  (5) yarn --cwd api start
+  (7) yarn --cwd api start
 
-  (6) yarn --cwd client start
+  (8) In your browser open localhost:300**1**/trivia-data
+
+  (9) Open a new Terminal at same level *(on MAC: CMD + T)*
+
+  (10) yarn --cwd client start
+
+  (11) In your browser open localhost:300**0**
 </h2>
 
 <p align="center">
