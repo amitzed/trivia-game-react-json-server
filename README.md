@@ -6,7 +6,7 @@
 
   To Start app locally on your system (Live deployment links below):
 
-  (1) On Upper right section of this page click green 'Code' button on this page COPY this Repo's HTTPS link.
+  (1) On Upper right section of this page click green 'Code' button and COPY this Repo's HTTPS link.
 
   (2) Create and name a folder on your computer and name it.
 
