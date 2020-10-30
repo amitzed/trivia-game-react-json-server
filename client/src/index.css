@@ -11,7 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   opacity: 0.9;
-  animation: moveBG 500s linear infinite;
+  animation: moveBG 300s linear infinite;
 }
 * {
   font-family: "Verdana", cursive, sans-serif;
