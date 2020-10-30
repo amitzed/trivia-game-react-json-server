@@ -2,7 +2,6 @@
 <h1 align="center"><b>Trivia Game</b> - Full Stack (React / JSON-Server) App</h1>
 
 <h2>
-  <b>Trivia Game</b>
 
   To Start app locally on your system (Live deployment links below):
 
