@@ -8,7 +8,7 @@
 
   (1) On Upper right section of this page click green 'Code' button and COPY this Repo's HTTPS link.
 
-  (2) Create and name a folder on your computer and name it.
+  (2) Create a folder on your computer and name it.
 
   (3) In your Terminal, navigate to this new folder and type: git clone *PASTE CLONED LINK HERE* and press *ENTER*
 
